@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="card">
+
+    <div class="card-content">
+      <div style="  font-family: 'open_sanslight';font-size: 16px;background: #424a55;color: #fff;text-align: center;text-transform: uppercase;font-weight: normal;width: 30%;height: 48px;line-height: 48px;border-radius: 2px 2px 0 0;" class="tittle">Stock Items</div>
+    </div>
+
+    <div [hidden]="shimmerOn" class="card-content">
+      <table class="responsive-table">
+        <thead>
+          <tr class="actionHeader">
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Last Update On</th>
+          </tr>
+        </thead>
+        <tbody class="tbl-content">
+          <tr *ngFor="let r of [1,2,3,4,5]">
+            <td class="table-data"></td>
+            <td class="table-data"></td>
+            <td class="table-data"></td>
+          </tr>
+        </tbody>
+
+        <ng-template #noRecord>
+          <strong style="text-align: center">No Records Found</strong>
+        </ng-template>
+      </table>
+    </div>
+
+
+    <div [hidden]="!shimmerOn" class="card-content">
+      <table class="responsive-table">
+        <thead>
+          <tr class="actionHeader">
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Last Update On</th>
+          </tr>
+        </thead>
+        <tbody class="tbl-content">
+          <tr *ngFor="let r of stockCollection">
+            <td>{{r.name}}</td>
+            <td [ngClass]="{'red lighten-3': r.background == 'red', 'green lighten-2': r.background == 'green'}">{{r.price}}</td>
+            <td>{{r.modifiedOn | dateDiff}}</td>
+          </tr>
+        </tbody>
+
+        <ng-template #noRecord>
+          <strong style="text-align: center">No Records Found</strong>
+        </ng-template>
+      </table>
+    </div>
+  </div>
+</div>

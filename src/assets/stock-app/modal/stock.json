@@ -1,0 +1,38 @@
+{
+  "stocks": [{
+    "name": "AAPL",
+    "oldPrice": 0.0,
+    "background": "white",
+    "price": 130.08,
+    "createdOn": "2019-05-11T17:05:27.780Z",
+    "modifiedOn": "2019-05-11T17:05:27.780Z"
+  }, {
+    "name": "EOOE",
+    "oldPrice": 0.0,
+    "background": "white",
+    "price": 910.10,
+    "createdOn": "2019-05-11T17:05:27.780Z",
+    "modifiedOn": "2019-05-11T17:05:27.780Z"
+  }, {
+    "name": "MSFT",
+    "oldPrice": 0.0,
+    "background": "white",
+    "price": 65.20,
+    "createdOn": "2019-05-11T17:05:27.780Z",
+    "modifiedOn": "2019-05-11T17:05:27.780Z"
+  }, {
+    "name": "LNKS",
+    "oldPrice": 0.0,
+    "background": "white",
+    "price": 196.80,
+    "createdOn": "2019-05-11T17:05:27.780Z",
+    "modifiedOn": "2019-05-11T17:05:27.780Z"
+  }, {
+    "name": "FB",
+    "oldPrice": 0.0,
+    "background": "white",
+    "price": 120.20,
+    "createdOn": "2019-05-11T17:05:27.780Z",
+    "modifiedOn": "2019-05-11T17:05:27.780Z"
+  }]
+}

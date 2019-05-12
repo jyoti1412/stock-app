@@ -1,0 +1,41 @@
+nav {
+  background: #FFFFFF;
+  box-shadow: 0 7px 24px 0 rgba(136,136,136,0.15);
+  font-family: 'open_sansregular';
+
+  ul a {
+    color: #2457a7;
+  }
+  .nav-wrapper {
+    .dp-child {
+      .brand-logo {
+        img {
+          height: 22px;
+          width: auto;
+          margin: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+.dropdown-content {
+  top: 100% !important;
+
+  li {
+    height: auto;
+    min-height: unset;
+    line-height: unset;
+
+    a {
+      color: #2457a7;
+      margin: 0;
+      font-size: 12px;
+      padding: 5px 20px;
+    }
+  }
+}
